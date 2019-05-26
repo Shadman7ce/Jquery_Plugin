@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link  rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1> Counter Up Plugin</h1>
+	<h1><span class="counter">1,234,567.00</span></h1>
+
+	<h1><span>$</span><span class="counter">1.99</span></h1>
+
+	<h1><span class="counter">12345</span></h1>
+	<br>
+	<h1>Parallax Plugin</h1>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="img/a.jpg"></div>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="img/b.jpg"></div>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="img/c.jpg"></div>
+	<!--JQuery then Pooper JS then Bootstrap -->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/parallax.min.js"></script>
+	<script src="js/script.js"></script>
+  <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</body>
+</html>
